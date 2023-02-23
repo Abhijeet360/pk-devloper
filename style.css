@@ -25,6 +25,10 @@ p {
     margin: 2rem 0;
 }
 
+.main-profile nav li {
+    list-style: none;
+}
+
 .main-profile {
     position: fixed;
     width: 30rem;
@@ -305,10 +309,45 @@ main {
     font-family: 'Open Sans', sans-serif;
     background-color: #0e6dfd;
     border-radius: .5rem;
-    border: none;    
+    border: none;
+    cursor: pointer;
 }
 
-.portfolio{
+
+/* <!-- Portfolio Sction --> */
+
+.portfolio {
     padding: 4rem 0;
     margin: 4rem 1rem;
+}
+.portfolio h2{
+    padding: 0 0 3rem;
+}
+
+.nav-bar {
+    width: 33%;
+    height: 6rem;
+    border: 2px solid black;
+}
+
+.nav-bar li {
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.portfolio-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 24.7rem);
+    grid-gap: 2rem;
+}
+
+.project-img {
+    background-color: red;
+}
+
+.project-img img {
+    height: auto;
+    width: 100%;
 }
